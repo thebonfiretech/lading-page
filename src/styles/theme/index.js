@@ -5,6 +5,7 @@ export const theme = {
         secondaryBackground: "#191919",
         text: "#EEEEEE", 
         secondaryText: "#A7A6A6",
-        textGradient: "linear-gradient(0deg, #0139FE 0%, #0697C5 29%, #0697C5 65%, #0697C5 95%, #0697C5 100%)"
+        gradient: "linear-gradient(91deg, #0139FE 13%, #029ECF 100%)"
     }
 }
+

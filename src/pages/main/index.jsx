@@ -13,9 +13,9 @@ const Main = () => {
 
     return (
         <Container>
-               
-             <CardsComponents text="Inovação" Icon={FaUser}></CardsComponents>
-            <Title title="happy or sad" size="60px"></Title>
+               <Navbar></Navbar>
+             {/* <CardsComponents text="Inovação" Icon={FaUser}></CardsComponents>
+            <Title title="happy or sad" size="60px"></Title> */}
 
         </Container>
     )
