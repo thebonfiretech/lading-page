@@ -4,7 +4,7 @@ import { Container, Box } from './styles';
 import { FaUser, FaLock, FaEye } from "react-icons/fa";
 
 import Navbar from '../../components/navbar';
-import Contacts from '../../components/contacts';
+import About from '../../components/about';
 import IconsContainers from '../../components/iconsContainers';
 import Footer from '../../components/footer';
 import MembersPhotos from '../../components/membersPhotos';
@@ -15,7 +15,7 @@ const Main = () => {
 
     return (
         <Container>
-            <IconsContainers Icon={FaUser}/>
+            <About/>
              {/* <CardsComponents text="Inovação" Icon={FaUser}></CardsComponents>
             <Title title="happy or sad" size="60px"></Title> */}
 
