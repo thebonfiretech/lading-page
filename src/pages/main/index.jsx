@@ -3,7 +3,7 @@ import React from 'react';
 import { Container, Box } from './styles';
 import { FaUser, FaLock, FaEye } from "react-icons/fa";
 
-import Navbar from '../../components/navbar';
+import Home from '../../components/home';
 import About from '../../components/about';
 import IconsContainers from '../../components/iconsContainers';
 import Footer from '../../components/footer';
@@ -15,7 +15,7 @@ const Main = () => {
 
     return (
         <Container>
-            <About/>
+            <Home/>
              {/* <CardsComponents text="Inovação" Icon={FaUser}></CardsComponents>
             <Title title="happy or sad" size="60px"></Title> */}
 
