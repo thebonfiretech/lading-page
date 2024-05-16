@@ -1,37 +1,65 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Container = styled.div`
-  justify-content: space-between;
-  padding: 0 40px 0 40px;
-  display: flex;
-  height: 4vh;
-  width:100%;
-`
+    justify-content: space-between;
+    padding-top: 30px;
+    display: flex;
+    height: 56px;
+    width: 90%;
+
+     @media (max-width: 820px) {
+        .buttonMobile {
+            display: none;
+        }
+    }
+
+    & svg{
+        cursor: pointer;
+        display: none;
+
+        @media (max-width: 820px) {
+            display: block;
+        }
+    }
+`;
 
 export const LogoArea = styled.div`
-  align-items: center;
-  display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 
-  & img{
-    height: 6vh;
-  }
+    & img {
+        height: 6vh;
+    }
 
-  & p{
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 12px;
-  }
-`
+    & p {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 17px;
+    }
+    
+`;
 
 export const NavigationArea = styled.div`
-   align-items: center;
-   display: flex;
-   gap: 30px;
+    align-items: center;
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+  
 
-   & p{
-    text-transform: capitalize;
-    font-weight: 400;
-    font-size: 12px;
-     cursor: pointer;
-   }
-`
+    & a {
+        text-transform: capitalize;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 16px;
+        color: white;
+        cursor: pointer;
+    }
+
+    @media (max-width: 820px) {
+        display: none;
+  
+    }
+
+`;
+

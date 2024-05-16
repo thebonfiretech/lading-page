@@ -7,6 +7,9 @@ export const Container = styled.div`
   line-height: 1.3rem;
   flex-wrap: wrap;
   display: flex;
-  height: auto;
-  width:75%;
+  width:  ${({width}) => width};
+
+  @media (max-width: 820px) {
+   text-align: center;
+  }
 `

@@ -1,26 +1,59 @@
-import React from 'react';
+ import React, {useState}  from 'react'
 
-import { Container, Box } from './styles';
-import { FaUser, FaLock, FaEye } from "react-icons/fa";
+import { Container } from './styles'
 
-import Home from '../../components/home';
-import About from '../../components/about';
-import IconsContainers from '../../components/iconsContainers';
-import Footer from '../../components/footer';
-import MembersPhotos from '../../components/membersPhotos';
-import CardsComponents from '../../components/cardsComponents';
-import Title from '../../components/title';
+import MiniGallery from '../../components/miniGallery'
+import MenuMobile from '../../components/menuMobile'
+import Products from '../../components/products'
+import Contacts from '../../components/contacts'
+import Navbar from '../../components/navbar'
+import About from '../../components/about'
+import Home from '../../components/home'
+import Team from '../../components/team'
+import Zap from '../../components/zap'
 
 const Main = () => {
 
-    return (
-        <Container>
-            <Home/>
-             {/* <CardsComponents text="Inovação" Icon={FaUser}></CardsComponents>
-            <Title title="happy or sad" size="60px"></Title> */}
+  const [menuIsVisible, setMenuIsVisible] = useState(false)
+  
+  const scrollToAbout = () => {
+    document.querySelector("#about").scrollIntoView({ behavior: "smooth" });
+  };
 
-        </Container>
-    )
+  const scrollToProducts = () => {
+    document.querySelector("#products").scrollIntoView({ behavior: "smooth" });
+  };
+
+  const scrollToTeam = () => {
+    document.querySelector("#team").scrollIntoView({ behavior: "smooth" });
+  };
+
+  const scrollToContacts = () => {
+        document.querySelector("#contacts").scrollIntoView({ behavior: "smooth" });
+      };
+
+  return (
+    <Container>
+      <MenuMobile 
+        menuIsVisible={menuIsVisible}
+        setMenuIsVisible={setMenuIsVisible}
+      />
+      <Navbar 
+        scrollToAbout={scrollToAbout} 
+        scrollToProducts={scrollToProducts} 
+        scrollToTeam={scrollToTeam} 
+        scrollToContacts={scrollToContacts} 
+        setMenuIsVisible={setMenuIsVisible}
+      />
+      <Zap/>
+      <Home id="home" />
+      <About id="about" />
+      <Products id="products" />
+      <Team id="team"/>
+      <MiniGallery id="gallery" />
+      <Contacts id="contacts"/>
+    </Container>
+  );
 }
 
-export default Main
+export default Main;

@@ -2,9 +2,9 @@ import React from "react"
 
 import {Container} from './styles.js'
 
-const Text = ({text}) => {
+const Text = ({text, width}) => {
   return(
-    <Container>
+    <Container width={width}>
       {text}
     </Container>
   )

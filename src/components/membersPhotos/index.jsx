@@ -1,12 +1,20 @@
 import React from "react"
+import { Container, Circle, TextContainer, Name, Position } from './styles.js'
 
-import { Container } from './styles.js'
+const MembersPhotos = ({ photo, name, position}) => {
+   const positionsArray = position.split(";")
 
-const MembersPhotos = ({photo}) => {
-  return (
-    <Container photo={photo}>
-    </Container>
-  )
+   return (
+      <Container>
+         <Circle photo={photo} />
+         <TextContainer>
+            <Name>{name}</Name>
+            {positionsArray.map((pos, index) => (
+               <Position key={index}>{pos.trim()}</Position>
+            ))}
+         </TextContainer>
+      </Container>
+   );
 }
 
-export default MembersPhotos
+export default MembersPhotos;

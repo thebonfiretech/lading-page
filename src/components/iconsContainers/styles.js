@@ -8,4 +8,11 @@ export const Container = styled.div`
   display: flex;
   height: 70px;
   width: 70px;
+
+
+  @media (max-width: 820px) {
+    height: 50px;
+    width: 50px;
+
+  }
 `

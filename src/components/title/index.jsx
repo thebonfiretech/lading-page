@@ -2,10 +2,10 @@ import React from "react"
 
 import {Container} from './styles.js'
 
-const Title = ({size, title}) => {
+const Title = ({size, title, width}) => {
   return(
     <>
-    <Container size={size}>
+    <Container size={size}  width={width}>
       {title}
     </Container>
       </>

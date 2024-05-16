@@ -1,24 +1,20 @@
-import React from 'react'
+import React from 'react';
+import { Container } from './styles.js';
+import Title from '../title';
+import Text from '../text';
 
-import { Container } from './styles.js'
-
-import Text from '../text'
-import Title from '../title'
-
-const About = () => {
-  return(
-     <Container>
-       <div>
-          <img src='../../public/images/mockup.svg'/>
-       </div>
-       <div>
-         <Title title="O que é o Bonfire?" size="48px"/>
-         <Text text="ewdkldkldkek ekdkjekkde edkldekkdo dejdkekdk ejkdekd emdkekd dkejkdmk dekdlke ekdlkel"/>
-       </div>
-     
-     </Container>
-  )
-    
+const About = ({id}) => {
+  return (
+    <Container id={id}>
+      <div>
+        <img src='../../public/images/mockup.svg' alt="Imagem"/>
+      </div>
+      <div>
+        <Title title="O que é o Bonfire?" size="48px" width="80%"/>
+        <Text text="O Bonfire é uma empresa facilitadora digital, responsável por criar soluções tecnológicas que não apenas simplificam, mas também transformam a experiência das pessoas no mundo online. Somos impulsionados pela inovação, comprometidos em oferecer segurança, comunicação eficaz, qualidade e oportunidades de aprendizado, enquanto promovemos a acessibilidade e a usabilidade em cada produto desenvolvido. " width="80%"/>
+      </div>
+    </Container>
+  );
 }
 
-export default About
+export default About;

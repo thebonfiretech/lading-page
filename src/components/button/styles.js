@@ -10,4 +10,10 @@ export const Container = styled.div`
    display: flex;
    height: 4vh;
    width: 10vw;
+
+   @media (max-width: 820px) {
+   height: 5vh;
+   width: 30vw;
+   
+    }
 `;
