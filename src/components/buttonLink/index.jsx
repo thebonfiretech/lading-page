@@ -3,9 +3,14 @@ import React from 'react'
 import { Container, InformationArea} from './styles.js'
 
 
-const ButtonLink = ({title, onAction, Icone}) => {
+const ButtonLink = ({title, link, Icone}) => {
+
+  function goToSocialMidia(){
+    window.location.href = link
+  }
+  
   return(
-     <Container onClick={() => onAction()}>
+     <Container onClick={goToSocialMidia}>
        <InformationArea>
            {Icone}
            {title}

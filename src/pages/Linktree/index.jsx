@@ -1,50 +1,52 @@
-import React from "react"
+import React from "react";
 
-import ButtonLinks from "../../components/buttonLink"
-import { AiFillBehanceSquare, AiFillGithub } from 'react-icons/ai'
-import { FaTiktok } from 'react-icons/fa'
-import Contacts from '../../components/contacts'
-import CameBack from '../../components/cameBack'
-import Text from '../../components/text'
+import { AiFillBehanceSquare, AiFillGithub } from 'react-icons/ai';
+import { FaTiktok } from 'react-icons/fa';
 
-import { Container, ButtonArea, Footer } from './styles'
+import ButtonLink from "../../components/buttonLink";
+import Contacts from '../../components/contacts';
+import CameBack from '../../components/cameBack';
+import Text from '../../components/text';
+
+import { Container, ButtonArea, Footer, ImgArea } from './styles';
 
 const Linktree = () => {
 
   const links = [
     {
-      icone: <FaTiktok/>,
+      icone: <FaTiktok />,
       title: "TikTok",
-      link: ""
+      link: "https://www.tiktok.com/@thebonfiretech?_t=8mKVfsCY610&_r=1"
     },
     {
-      icone: <AiFillBehanceSquare/>,
+      icone: <AiFillBehanceSquare />,
       title: "Behance",
-      link: ""
+      link: "https://www.behance.net/bonfiretech"
     },
     {
-      icone: <AiFillGithub/>,
+      icone: <AiFillGithub />,
       title: "GitHub",
-      link: ""
+      link: "https://github.com/thebonfiretech"
     },
-    
-]
-  return(
-    <Container>
-      <CameBack/>
-     <img src='../../public/images/logo.svg' alt="Logo"/> 
-      <Text text="Explore nosso portfólio e redes sociais e descubra como transformamos ideias em soluções digitais criativas, inovadoras e de alta qualidade." width="70%"/>
-     <ButtonArea>
-      {links.map((links, index) => (
-        <ButtonLinks Icone={links.icone} title={links.title}/>
-      ))}
-       </ButtonArea> 
-      <Footer>
-         <Contacts/>
-      </Footer>
-   
-    </Container>
-  )
-}
+  ];
 
-export default Linktree
+  return (
+    <Container>
+      <CameBack />
+      <ImgArea>
+        <img src='../../public/images/logo.svg' alt="Logo" />
+      </ImgArea>
+      <Text text="Explore nosso portfólio e redes sociais e descubra como transformamos ideias em soluções digitais criativas, inovadoras e de alta qualidade." width="70%" />
+      <ButtonArea>
+        {links.map((link, index) => (
+          <ButtonLink key={index} Icone={link.icone} title={link.title} link={link.link} />
+        ))}
+      </ButtonArea>
+      <Footer>
+        <Contacts />
+      </Footer>
+    </Container>
+  );
+};
+
+export default Linktree;

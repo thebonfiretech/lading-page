@@ -12,6 +12,10 @@ export const Container = styled.div`
    height: 63px;
    width: 550px;
 
+   & svg{
+      font-size: 24px;
+   }
+
    @media (max-width: 820px) {
    height: 61px;
    width: 338px;

@@ -15,7 +15,7 @@ const CameBack = () => {
   
   return(
     <Container onClick={backToHome}>
-      <MdArrowBack size={47} color="#eeeee" />
+      <MdArrowBack size={35} color='#eeeeee' />
     </Container>
   )
   

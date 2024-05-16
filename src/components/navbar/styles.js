@@ -7,6 +7,16 @@ export const Container = styled.div`
     height: 56px;
     width: 90%;
 
+    & .buttonMobile{
+        display: flex;
+        gap: 2px;
+    }
+
+    & svg{
+        display: block;
+    }
+
+
      @media (max-width: 820px) {
         .buttonMobile {
             display: none;

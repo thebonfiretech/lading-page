@@ -17,6 +17,7 @@ const Home = () => {
         </IconsArea>
       </InicialArea>
       <DownButtonContainer>
+        <DownButton/>
       </DownButtonContainer>
     </Container>
   )
