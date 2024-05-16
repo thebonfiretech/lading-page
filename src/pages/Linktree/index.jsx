@@ -4,6 +4,7 @@ import ButtonLinks from "../../components/buttonLink"
 import { AiFillBehanceSquare, AiFillGithub } from 'react-icons/ai'
 import { FaTiktok } from 'react-icons/fa'
 import Contacts from '../../components/contacts'
+import CameBack from '../../components/cameBack'
 import Text from '../../components/text'
 
 import { Container, ButtonArea, Footer } from './styles'
@@ -30,6 +31,7 @@ const Linktree = () => {
 ]
   return(
     <Container>
+      <CameBack/>
      <img src='../../public/images/logo.svg' alt="Logo"/> 
       <Text text="Explore nosso portfólio e redes sociais e descubra como transformamos ideias em soluções digitais criativas, inovadoras e de alta qualidade." width="70%"/>
      <ButtonArea>
