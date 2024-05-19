@@ -9,10 +9,10 @@ export const Container = styled.div`
 
     & .buttonMobile{
         display: flex;
-        gap: 2px;
+        gap: 15px;
     }
 
-    & svg{
+    & .link{
         display: block;
     }
 
@@ -59,11 +59,16 @@ export const NavigationArea = styled.div`
 
     & a {
         text-transform: capitalize;
+         transition: all 1s ease;
         text-decoration: none;
         font-weight: 400;
         font-size: 16px;
-        color: white;
         cursor: pointer;
+        color: white;
+    }
+
+    & a:hover{
+        color: ${({ theme }) => theme.colors.primary};
     }
 
     @media (max-width: 820px) {
