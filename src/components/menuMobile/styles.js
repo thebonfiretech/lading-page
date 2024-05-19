@@ -8,7 +8,8 @@ export const Container = styled.div`
   width: 100%; 
   z-index: 5;
 
-  opacity: 0;
+  transition: transform 0.7s ease-in;
+  transform: translateX(100%);
   pointer-events: none;
 
   & svg {
@@ -34,7 +35,12 @@ export const Container = styled.div`
   }
 
   & nav a {
+    transition: all 1s ease;
     text-decoration: none;
+  }
+
+  & nav a:hover{
+      background: ${({ theme }) => theme.colors.primary};
   }
 
   & nav div{
@@ -44,7 +50,7 @@ export const Container = styled.div`
   ${({ isVisible }) =>
     isVisible &&
     css`
+      transform: translateX(0);
       pointer-events: auto;
-      opacity: 1;
     `}
 `
