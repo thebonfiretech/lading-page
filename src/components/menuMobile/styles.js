@@ -40,7 +40,7 @@ export const Container = styled.div`
   }
 
   & nav a:hover{
-      background: ${({ theme }) => theme.colors.primary};
+      color: ${({ theme }) => theme.colors.primary};
   }
 
   & nav div{
