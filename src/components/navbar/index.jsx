@@ -1,4 +1,5 @@
-import React, {useState}  from 'react'
+import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 import { Container, LogoArea, NavigationArea } from './styles'
 	
@@ -8,6 +9,11 @@ import Button from '../button'
 
 
 const Navbar = (props) => {
+	const navigate = useNavigate()
+
+	function navigateLink(){
+		 navigate('/links')
+	}
 
 	return (
 		<Container>
@@ -23,11 +29,14 @@ const Navbar = (props) => {
 			</NavigationArea>
 			<div className='buttonMobile'>
 				<MdInsertLink
+					className='link'
 					color='#eeeeee'
-					size={35} />
+					size={35}
+					onClick={navigateLink}
+					/>
 				<Button title="Contato" onAction={props.scrollToContacts} />
 				</div>
-			  <MdOutlineSegment 
+			  <MdOutlineSegment
 					 color='#eeeeee'
 					size={35}
 					onClick={() => props.setMenuIsVisible(true)}
