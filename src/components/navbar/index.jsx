@@ -1,9 +1,10 @@
-import React from 'react'
+import {MdOutlineSegment, MdInsertLink} from 'react-icons/md'
 import { useNavigate } from 'react-router-dom'
+import React from 'react'
 
 import { Container, LogoArea, NavigationArea } from './styles'
+import logo from '../../../public/images/logo.svg'
 	
-import {MdOutlineSegment, MdInsertLink} from 'react-icons/md'
 
 import Button from '../button'
 
@@ -18,7 +19,7 @@ const Navbar = (props) => {
 	return (
 		<Container>
 			<LogoArea>
-				<img src='../../public/images/logo.svg' alt="Logo"/>
+				<img src={logo} alt="Logo"/>
 				<p>bonfire</p>
 			</LogoArea>
 			 <NavigationArea>
