@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container } from './styles.js';
+import { Container, Align } from './styles.js';
 import Title from '../title';
 import Text from '../text';
 
@@ -10,8 +10,10 @@ const About = ({id}) => {
         <img src='../../public/images/mockup.svg' alt="Imagem"/>
       </div>
       <div>
+        <Align>
         <Title title="O que é o Bonfire?" size="48px" width="80%"/>
         <Text text="O Bonfire é uma empresa facilitadora digital, responsável por criar soluções tecnológicas que não apenas simplificam, mas também transformam a experiência das pessoas no mundo online. Somos impulsionados pela inovação, comprometidos em oferecer segurança, comunicação eficaz, qualidade e oportunidades de aprendizado, enquanto promovemos a acessibilidade e a usabilidade em cada produto desenvolvido. " width="80%"/>
+          </Align>
       </div>
     </Container>
   );
