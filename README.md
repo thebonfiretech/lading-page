@@ -1,43 +1,30 @@
 
 # Lading Page - Bonfire
-
 A Landing Page foi criada para atrair clientes para a empresa Bonfire. Nesta página, o usuário encontrará informações relevantes sobre a empresa, conhecerá um pouco da equipe e do trabalho realizado por eles. Além disso, através desta página, é possível entrar em contato com a empresa para fazer um orçamento, tirar dúvidas e muito mais.
 
+## Tecnologias
+### Linguagem de Programação:
+  ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+### Framework & Bibliotecas:
+  ![React Native](https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+  ![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
+  ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
 
-## Tecnologias utilizadas
-- Template Personalizado
-- react-floating-whatsapp
-- styled-componentes
-- react-router-dom
-- React-Icons
-- Git e GitHub
-- Replit
-- react
-- Vite
-
-## Link do projeto
-
-[Replit](https://c9c41f47-52b8-4f3e-b64d-4b01b1946121-00-2fxlvjvu3dqbb.picard.replit.dev/)
-
-[Protótipo - Figma](https://www.figma.com/proto/QW2kHbmSPI9mccO1CSCGEm/projeto-gentileza?type=design&node-id=970-2039&t=bJDhjk83s82qQPAS-0&scaling=min-zoom&page-id=965%3A31](https://www.figma.com/proto/QW2kHbmSPI9mccO1CSCGEm/projeto-gentileza?node-id=1251-138&t=wOTYAgLrl2x0yLY5-0&scaling=min-zoom&page-id=965%3A31))
 
 ## Funcionalidades
-
+- Página de erro configurada
 - Possibilidade de entrar em contato com a empresa através do whatsapp
-- Informar o usuários obre a empresa
-- Rota de erro 
+- Informar o usuários sobre a empresa
 - Responsivo
-
-## Usado por
-
-Esse projeto é usado pelas seguintes empresas:
-
-- Bonfire
-
-O projeto em questão representa uma iniciativa de natureza privada integrante da entidade empresarial previamente mencionada. Sua principal operação envolve a comercialização de aplicativos destinados a outras empresas que decidem adquirir tais soluções tecnológicas. No contexto desse projeto, essa lading page é uma forma de divulgar os serviços prestados pela empresa e também é uma forma de aproximar ainda mais o cliente da empresa.
+- Página de links
 
 
-<!-- ## Autor
+## Licença
+Este projeto está licenciado sob a licença MIT - veja o arquivo LICENSE para mais detalhes.
 
-- [](https://www.github.com/darknx) -->
+## Autores
+
+[@Gabi-Viana](https://github.com/Gabi-Viana)
+[@AdrianJonathanMB](https://github.com/AdrianJonathanMB)
+
 
