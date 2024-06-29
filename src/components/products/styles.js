@@ -19,7 +19,6 @@ export const Container = styled.div`
 
 export const TextContainer = styled.div`
      justify-content: center;
-     align-items: center;
      display: flex;
      width: 100%;
 `;
