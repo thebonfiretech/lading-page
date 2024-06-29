@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.div`
     background:  ${({ theme }) => theme.colors.secondaryBackground};
     grid-template-columns: 1fr 1fr;
-    align-items: center;
+    /* align-items: center; */
     display: grid;
     height: 820px;
     width: 100%;
@@ -15,8 +15,8 @@ export const Container = styled.div`
     & div{
       justify-content: center;
       flex-direction: column;
-      padding: 30px 20px;
-      align-content: start;
+      align-content: center;
+      align-items: center;
       display: flex;
       widht: 100%;
     }
@@ -36,4 +36,12 @@ export const Container = styled.div`
       }
 
     }
+`
+export const Align = styled.div`
+ width: 95%;
+
+ @media (max-width: 820px) {
+   width: 100%;
+ }
+
 `
