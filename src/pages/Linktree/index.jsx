@@ -7,6 +7,7 @@ import ButtonLink from "../../components/buttonLink";
 import Contacts from '../../components/contacts';
 import CameBack from '../../components/cameBack';
 import Text from '../../components/text';
+import Logo from '/images/logo.svg'
 
 import { Container, ButtonArea, Footer, ImgArea } from './styles';
 
@@ -34,7 +35,7 @@ const Linktree = () => {
     <Container>
       <CameBack />
       <ImgArea>
-        <img src='../../public/images/logo.svg' alt="Logo" />
+        <img src={Logo} alt="Logo" />
       </ImgArea>
       <Text text="Explore nosso portfólio e redes sociais e descubra como transformamos ideias em soluções digitais criativas, inovadoras e de alta qualidade." width="70%" />
       <ButtonArea>

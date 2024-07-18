@@ -1,6 +1,7 @@
 
 import React from 'react';
-import { Container, Box, Informations, Button } from './styles'; 
+import { Container, Box, Informations, Button } from './styles';
+import Logo from '/images/logo.svg'
 
 const Error = () => {
     const redirect = () => {
@@ -11,7 +12,7 @@ const Error = () => {
         <Container>
             <Box>
                 <h1>4</h1>
-                <img src='../../public/images/logo.svg' width='300px' alt="Logo" />
+                <img src={Logo} width='300px' alt="Logo" />
                 <h1>4</h1>
             </Box>
             <Informations>
