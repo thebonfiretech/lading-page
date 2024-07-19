@@ -2,10 +2,10 @@ import React from "react"
 
 import {Container} from './styles.js'
 
-const Title = ({size, title, width}) => {
+const Title = ({size, title, width, gradient}) => {
   return(
     <>
-    <Container size={size}  width={width}>
+    <Container gradient={gradient} size={size}  width={width}>
       {title}
     </Container>
       </>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Align } from './styles.js';
+import Mockup from '/images/mockup.svg';
 import Title from '../title';
 import Text from '../text';
 
@@ -7,7 +8,7 @@ const About = ({id}) => {
   return (
     <Container id={id}>
       <div>
-        <img src='../../public/images/mockup.svg' alt="Imagem"/>
+        <img src={Mockup} alt="Imagem"/>
       </div>
       <div>
         <Align>
