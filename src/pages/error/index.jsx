@@ -1,26 +1,40 @@
-
 import React from 'react';
-import { Container, Box, Informations, Button } from './styles';
-import Logo from '/images/logo.svg'
+import { AiOutlineClose } from "react-icons/ai";
+import { useNavigate } from "react-router-dom";
+import { Container, Box, Position1, Position2, Position3, Message, Icon, Button } from './styles';
 
 const Error = () => {
-    const redirect = () => {
-        window.location.href = '/'; 
-    };
+    const navigate = useNavigate();
 
+    const cameBack = () => {
+        navigate('/')
+    }
     return (
         <Container>
             <Box>
-                <h1>4</h1>
-                <img src={Logo} width='300px' alt="Logo" />
-                <h1>4</h1>
-            </Box>
-            <Informations>
-                <p>Página não encontrada :(</p>
-                <Button onClick={redirect}>
-                    Voltar para tela inicial
+                <Position1>
+                    <Icon>
+                        <AiOutlineClose size={30} color='#fff'/>
+                    </Icon>
+                </Position1>
+                <h1>Oops!</h1>
+                <Message>
+                <Position2>
+                    <Icon>
+                        <AiOutlineClose size={30} color='#fff'/>
+                    </Icon>
+                </Position2>
+                    <p>Algo deu errado</p>
+                </Message>
+                <Button onClick={cameBack}>
+                 TENTE NOVAMENTE
                 </Button>
-            </Informations>
+                    <Position3>
+                        <Icon>
+                            <AiOutlineClose size={30} color='#fff'/>
+                        </Icon>
+                    </Position3>
+            </Box>
         </Container>
     );
 }

@@ -1,72 +1,111 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+    overflow-x: hidden;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
     height: 100vh;
     display: flex;
     width: 100%;
-`
+`;
 
 export const Box = styled.div`
-     flex-direction: row;
-     display: flex;
-     gap: 8px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 0 10%;
 
-    &>h1{
-      font-size: 45vh;
+    & > h1 {
+        letter-spacing: 4px;
+        font-weight: 700;
+        font-size: 110px;
     }
 
-    @media (max-width: 820px) {
-      gap: 2px;
-      &>h1{
-        font-size: 10rem;
+    @media (max-width: 678px) {
+      padding: 0;
+      & > h1 {
+          font-size: 80px;
       }
+     }
+`;
 
-      &>img{
-        width:170px
-      }
+export const Position1 = styled.div`
+  transform: rotate(15deg);
+  margin-left: 60%;
+`;
 
-    }
-`
+export const Position2 = styled.div`
+  transform: rotate(-33deg);
+  margin-left: -20%;
+`;
 
-export const Informations = styled.div`
-   text-transform: capitalize;
-   flex-direction: column;
-   padding-top: 40px;
-   text-align:center;
-   display: flex;
+export const Position3 = styled.div`
+  transform: rotate(-20deg);
+  margin-left: 100%;
+  margin-top: -85px;
 
-  &>p{
-    font-size: 1.2rem;
+  @media (max-width: 678px) {
+    margin-left: 95%;
+   }
+`;
+
+export const Message = styled.div`
+ flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+
+  & > p {
+      letter-spacing: 1px;
+      font-weight: 500;
+      font-size: 20px;
+      width: 100%;
   }
 
-  &>Button{
-    margin-top:25px;
-  }
+@media (max-width: 678px) {
+   & > p {
+       font-size: 18px;
+   }
+ }
 
-  @media (max-width: 820px) {
-     padding-top: 80px;
+`;
 
-    &>p{
-      font-size: 1rem;
-    }
+export const Icon = styled.div`
+    border: solid 2px #fff;
+    justify-content: center;
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+    height: 68px;
+    width: 72px;
 
-  }
-
-`
+  @media (max-width: 678px) {
+     height: 60px;
+     width: 68px;
+   }
+`;
 
 export const Button = styled.button`
-border-image-source: linear-gradient(91deg, #024FF0 0.52%, #0499C8 100%);
-    background-image: linear-gradient(91deg, #024FF0 0.52%, #0499C8 100%);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    border-image-slice: 1;
-    background-clip: text;
-    border-style: solid;
-    border-width: 2px;
+    background: ${({theme}) => theme.colors.gradient};
+    color: ${({theme}) => theme.colors.text};
+    text-transform: uppercase;
+    box-sizing: border-box;
+    transition: ease .2s;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    font-weight: 800;
     cursor: pointer;
-    width: 15vw;
-    height: 8vh;
+    width: 300px;
+    border: none;
+    height: 45px;
+
+  &:hover{
+    opacity: 81%;
+  }
+
+  @media (max-width: 678px)
+{
+  width: 200px;
+}
+
 `
