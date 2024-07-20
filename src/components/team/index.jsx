@@ -12,7 +12,7 @@ import Title from '../title';
 const Team = ({ id }) => {
   return (
     <Container id={id}>
-      <Title title="Equipe" size="48px" width="80%" />
+      <Title gradient="linear-gradient(100deg, #0139FE 0%, #0697C5 10%, #0697C5 20%)" title="Equipe" size="48px" width="80%" />
       <MembersContainer>
         <MembersPhotos 
           name="João Dutra" 
