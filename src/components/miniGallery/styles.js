@@ -21,6 +21,7 @@ export const GalleryContainer = styled.div`
 
 export const GalleryPhotos = styled.div`
   justify-content: center;
+ flex-direction: ${({ reverse }) => (reverse ? 'row-reverse' : 'row')};
   display: flex;
   gap: 18px;
   width: 80%;
@@ -30,14 +31,3 @@ export const GalleryPhotos = styled.div`
   }
 `;
 
-export const GalleryPhotos2 = styled.div`
-  display: flex;
-  flex-direction: row-reverse; 
-  justify-content: center;
-  width: 80%;
-  gap: 18px;
-
-  @media (max-width: 820px) {
-    display: none;
-  }
-`;
