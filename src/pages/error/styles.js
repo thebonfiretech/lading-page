@@ -21,53 +21,43 @@ export const Box = styled.div`
     }
 
     @media (max-width: 678px) {
-      padding: 0;
-      & > h1 {
-          font-size: 80px;
-      }
-     }
+        padding: 0;
+        & > h1 {
+            font-size: 80px;
+        }
+    }
 `;
 
-export const Position1 = styled.div`
-  transform: rotate(15deg);
-  margin-left: 60%;
-`;
+export const Position = styled.div`
+    transform: ${({ rotate }) => `rotate(${rotate})`};
+    margin-left: ${({ margin }) => margin};
+    margin-top: ${({ top }) => top};
 
-export const Position2 = styled.div`
-  transform: rotate(-33deg);
-  margin-left: -20%;
-`;
-
-export const Position3 = styled.div`
-  transform: rotate(-20deg);
-  margin-left: 100%;
-  margin-top: -85px;
-
-  @media (max-width: 678px) {
-    margin-left: 95%;
-   }
+    @media (max-width: 678px) {
+        margin-left: ${({ mobileMargin }) => mobileMargin};
+    }
+        
 `;
 
 export const Message = styled.div`
- flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
 
-  & > p {
-      letter-spacing: 1px;
-      font-weight: 500;
-      font-size: 20px;
-      width: 100%;
-  }
+    & > p {
+        letter-spacing: 1px;
+        font-weight: 500;
+        font-size: 20px;
+        width: 100%;
+    }
 
-@media (max-width: 678px) {
-   & > p {
-       font-size: 18px;
-   }
- }
-
+    @media (max-width: 678px) {
+        & > p {
+            font-size: 18px;
+        }
+    }
 `;
 
 export const Icon = styled.div`
@@ -79,18 +69,18 @@ export const Icon = styled.div`
     height: 68px;
     width: 72px;
 
-  @media (max-width: 678px) {
-     height: 60px;
-     width: 68px;
-   }
+    @media (max-width: 678px) {
+        height: 60px;
+        width: 68px;
+    }
 `;
 
 export const Button = styled.button`
-    background: ${({theme}) => theme.colors.gradient};
-    color: ${({theme}) => theme.colors.text};
+    background: ${({ theme }) => theme.colors.gradient};
+    color: ${({ theme }) => theme.colors.text};
     text-transform: uppercase;
     box-sizing: border-box;
-    transition: ease .2s;
+    transition: ease 0.2s;
     letter-spacing: 1px;
     border-radius: 5px;
     font-weight: 800;
@@ -99,13 +89,11 @@ export const Button = styled.button`
     border: none;
     height: 45px;
 
-  &:hover{
-    opacity: 81%;
-  }
+    &:hover {
+        opacity: 81%;
+    }
 
-  @media (max-width: 678px)
-{
-  width: 200px;
-}
-
-`
+    @media (max-width: 678px) {
+        width: 200px;
+    }
+`;
