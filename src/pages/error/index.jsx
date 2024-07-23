@@ -1,28 +1,42 @@
+                import React from 'react';
+                import { AiOutlineClose } from "react-icons/ai";
+                import { useNavigate } from "react-router-dom";
+                import { Container, Box, Position, Message, Icon, Button } from './styles';
 
-import React from 'react';
-import { Container, Box, Informations, Button } from './styles';
-import Logo from '/images/logo.svg'
+                const Error = () => {
+                    const navigate = useNavigate();
 
-const Error = () => {
-    const redirect = () => {
-        window.location.href = '/'; 
-    };
+                    const cameBack = () => {
+                        navigate('/')
+                    }
+                    return (
+                        <Container>
+                            <Box>
+                                <Position rotate="15deg" margin="60%">
+                                    <Icon>
+                                        <AiOutlineClose size={30} color='#fff'/>
+                                    </Icon>
+                                </Position>
+                                <h1>Oops!</h1>
+                                <Message>
+                                    <Position rotate="-33deg" margin="-20%">
+                                        <Icon>
+                                            <AiOutlineClose size={30} color='#fff'/>
+                                        </Icon>
+                                    </Position>
+                                    <p>Algo deu errado</p>
+                                </Message>
+                                <Button onClick={cameBack}>
+                                    TENTE NOVAMENTE
+                                </Button>
+                                <Position rotate="-20deg" margin="100%" top="-85px" mobileMargin="95%">
+                                    <Icon>
+                                        <AiOutlineClose size={30} color='#fff'/>
+                                    </Icon>
+                                </Position>
+                            </Box>
+                        </Container>
+                    );
+                }
 
-    return (
-        <Container>
-            <Box>
-                <h1>4</h1>
-                <img src={Logo} width='300px' alt="Logo" />
-                <h1>4</h1>
-            </Box>
-            <Informations>
-                <p>Página não encontrada :(</p>
-                <Button onClick={redirect}>
-                    Voltar para tela inicial
-                </Button>
-            </Informations>
-        </Container>
-    );
-}
-
-export default Error;
+                export default Error;
