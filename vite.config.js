@@ -14,7 +14,7 @@ export default defineConfig(({ command, mode }) => {
       port: '7000'
     },
     build:{
-      outDir: 'build'
+      outDir: 'dist'
     }
   }
 })
