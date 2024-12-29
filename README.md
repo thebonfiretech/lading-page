@@ -24,6 +24,7 @@ Este projeto está licenciado sob a licença MIT - veja o arquivo LICENSE para m
 
 ## Autores
 
+[@odutradev](https://github.com/odutradev)
 [@Gabi-Viana](https://github.com/Gabi-Viana)
 [@AdrianJonathanMB](https://github.com/AdrianJonathanMB)
 

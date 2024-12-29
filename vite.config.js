@@ -11,10 +11,10 @@ export default defineConfig(({ command, mode }) => {
     plugins: [react()],
     server: {
       host: '0.0.0.0',
-      port: '8080'
+      port: '7000'
     },
     build:{
-      outDir: 'build'
+      outDir: 'dist'
     }
   }
 })
