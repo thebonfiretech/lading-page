@@ -11,7 +11,6 @@ import Navbar from '../../components/navbar'
 import About from '../../components/about'
 import Home from '../../components/home'
 import Team from '../../components/team'
-import Zap from '../../components/zap'
 
 const Main = () => {
 
@@ -46,7 +45,6 @@ const Main = () => {
         scrollToContacts={scrollToContacts} 
         setMenuIsVisible={setMenuIsVisible}
       />
-      <Zap/>
       <Home id="home" />
       <About id="about" />
       <Products id="products" />
