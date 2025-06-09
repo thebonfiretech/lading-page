@@ -13,7 +13,10 @@ const About = ({id}) => {
       <div>
         <Align>
         <Title title="O que é o Bonfire?" size="48px" width="80%"/>
-        <Text text="O Bonfire é uma empresa facilitadora digital, responsável por criar soluções tecnológicas que não apenas simplificam, mas também transformam a experiência das pessoas no mundo online. Somos impulsionados pela inovação, comprometidos em oferecer segurança, comunicação eficaz, qualidade e oportunidades de aprendizado, enquanto promovemos a acessibilidade e a usabilidade em cada produto desenvolvido. " width="80%"/>
+        <Text text="
+        O Bonfire oferece soluções tecnológicas inovadoras que aproximam estudantes, professores e escolas, facilitando a comunicação e promovendo o aprendizado real. Nossos produtos abordam temas essenciais como educação financeira e pensamento computacional, preparando as novas gerações para os desafios do mundo moderno. 
+        Acreditamos que a educação só alcança todo o seu potencial quando acompanha as transformações
+        do mundo. E, nesse mundo em constante mudança, a tecnologia não é mais uma opção – é o caminho para o futuro" width="80%"/>
           </Align>
       </div>
     </Container>

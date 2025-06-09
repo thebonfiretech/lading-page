@@ -11,13 +11,14 @@ const Products = ({id}) => {
       <TextContainer>
         <TextArea>
         <Title title="Nossos produtos e valores" size="48px" width="80%" />
-        <Text text="Somos uma empresa de tecnologia comprometida em simplificar a vida das pessoas através de soluções inovadoras em websites e aplicativos. Valorizamos a segurança, comunicação eficaz, qualidade e aprendizado contínuo sendo um de nosssos projetos voltado a educação finaceira para que desde criança possa ser aplicada com eficiência. Buscamos tornar a tecnologia acessível e fácil de usar, promovendo parcerias sólidas e excelência. Junte-se a nós para moldar o futuro da tecnologia de forma segura, eficiente e emocionante." width="80%" />
+        <Text text="Bonfire é a chama que acende a transformação na educação e na vida das pessoas. Somos uma empresa jovem, movida pela paixão por tecnologia e inovação, com um propósito claro: tornar o aprendizado acessível, simples e conectado ao mundo real.
+        Criamos soluções digitais que aproximam pessoas, facilitam a comunicação e promovem o desenvolvimento — desde a educação financeira para crianças até ferramentas que preparam para os desafios do futuro. No Bonfire, acreditamos que tecnologia é mais do que código: é impacto, é inclusão, é oportunidade." width="80%" />
           </TextArea>
       </TextContainer>
       <Value>
       <Grid>
         <CardsComponents Icon={MdOutlineLightbulb} text="Inovação" />
-        <CardsComponents Icon={MdCampaign} text="Comunicação assertiva" />
+        <CardsComponents Icon={MdCampaign} text="Assertiva" />
       </Grid>
       <Grid>
         <CardsComponents Icon={MdSchool} text="Conhecimento" />
