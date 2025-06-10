@@ -6,16 +6,15 @@ const GalleryMobile = ({ id }) => {
   return (
     <GalleryPhotos id={id}>
       <GalleryComponent>
-      <Gallery width="154px" height="222px"/>
-      <Gallery width="154px" height="222px"/>
+      <Gallery image="/images/photoGallery2.png" width="318px" height="222px" />
        </GalleryComponent>
       <GalleryComponent>
-      <Gallery width="318px" height="222px" />
+      <Gallery image="/images/photoGallery5.jpeg" width="318px" height="222px" />
       </GalleryComponent>
       <GalleryComponent>
-      <Gallery width="154px" height="222px"/>
-      <Gallery width="154px" height="222px" />
+      <Gallery image="/images/photoGallery6.jpeg" width="318px" height="222px" />
     </GalleryComponent>
+    
     </GalleryPhotos>
   )
 }
