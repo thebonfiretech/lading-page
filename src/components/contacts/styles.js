@@ -65,4 +65,11 @@ export const BussinessInfo = styled.div`
  }
 `
 
+export const Link = styled.a`
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 9999;
+
+`
+
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, SocialRede, BussinessInfo } from './styles.js';
+import { Container, SocialRede, BussinessInfo, Link} from './styles.js';
 
 import {MdMailOutline} from 'react-icons/md'
 
@@ -8,12 +8,9 @@ const Contacts = ({ id }) => {
     <Container id={id}>
       <SocialRede>
        <img src='../../public/images/insta.svg'/>
-        <div>
-           <p>Instagram</p>
-        </div>
-       
+          <Link href="https://instagram.com/thebonfiretech" target="_blank" rel="noopener noreferrer">Instagram</Link>
       <MdMailOutline color='#eeeeee' size={35}/>
-      <p>Email</p>
+      <Link href="mailto:thebonfiretech@gmail.com" target="_blank" rel="noopener noreferrer">Email</Link>
       </SocialRede>
       <BussinessInfo>
         &copy;
