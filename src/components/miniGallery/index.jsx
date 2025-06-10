@@ -15,7 +15,7 @@ const MiniGallery = ({ id }) => {
       <GalleryPhotos reverse={true}>
         <Gallery image="/images/photoGallery6.jpeg" width="336px" height="228px" />
   <Gallery image="/images/photoGallery3.jpg" width="158px" height="228px" />
-        <Gallery image="/images/photoGallery4.jpg"width="260px" height="228px" />
+        <Gallery image="/images/photoGallery4.jpg" width="260px" height="228px" />
       </GalleryPhotos>
       <GalleryMobile/>
       </GalleryContainer>
