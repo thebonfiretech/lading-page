@@ -6,7 +6,7 @@ import { Container, InformationArea} from './styles.js'
 const ButtonLink = ({title, link, Icone}) => {
 
   function goToSocialMidia(){
-    window.location.href = link
+     window.open(link, '_blank');
   }
   
   return(

@@ -5,7 +5,7 @@ export const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   border-style: none;
-  padding: 15px;
+  padding: 20px;
   display: flex;
   width: 95%;
   height: 4vh;
@@ -45,7 +45,7 @@ export const SocialRede= styled.div`
   align-items: center;
   display: flex;
   widht: 100%;
-  gap: 15px;
+  gap: 20px;
 
   @media (max-width: 820px) {
     & p{
@@ -63,6 +63,13 @@ export const BussinessInfo = styled.div`
  & p{
    padding-left: 10px;
  }
+`
+
+export const Link = styled.a`
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 9999;
+
 `
 
 

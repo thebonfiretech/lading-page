@@ -1,32 +1,28 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
-    background: ${({ theme }) => theme.colors.secondaryBackground};
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    width: 100%;
-    height: 820px;
-    gap: 81px;
+  background: ${({ theme }) => theme.colors.secondaryBackground};
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+  padding: 100px 0;
+  display: flex;
+  height: auto;
+  width: 100vw;
+  gap: 24px;
 
-    @media (max-width: 820px) {
-      min-height: 120vh;
-      height: auto;
-    }
+
 `;
 
 export const MembersContainer = styled.div`
-   grid-template-rows: repeat(2, 1fr); 
-   grid-template-columns: 1fr 1fr;
-   justify-items: center;
-   display: grid;
-   gap: 29px;
-   width: 100%;
-   height: auto; 
+  justify-content: space-around;
+  flex-direction: row;
+  display: flex;
+  width: 100%;
+  gap: 36px;
 
-   @media (max-width: 820px) {
-     grid-template-columns: 1fr;
-     grid-template-row: repeat(4, 1fr);
-   }
+  @media (max-width: 820px) {
+    flex-direction: column;
+  }
 `;
