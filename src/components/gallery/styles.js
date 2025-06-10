@@ -1,16 +1,19 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background-image: url(${({ photo }) => photo});
-  background-repeat: no-repeat;
-  justify-content: space-around;
-  background-position: center;
-  background-size: cover;
-  background-color: ${({ theme }) => theme.colors.secondaryBackground};
-  flex-direction: row;
-  align-items: center;
-  display: flex;
-  height: ${({ height }) => height}; 
-  width: ${({ width }) => width};
+  width: ${({ width }) => width || '100%'};
+  height: ${({ height }) => height || 'auto'};
+  overflow: hidden;
+  border-radius: 5px;
 
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
 `;
