@@ -3,7 +3,6 @@
 import { Container } from './styles'
 
 import MiniGallery from '../../components/miniGallery'
-import ContactMessage from '../../components/contactMessage'
 import MenuMobile from '../../components/menuMobile'
 import Products from '../../components/products'
 import Contacts from '../../components/contacts'
@@ -51,7 +50,6 @@ const Main = () => {
       <Team id="team"/>
       <MiniGallery id="gallery" />
       <Contacts id="contacts"/>
-      <ContactMessage/>
     </Container>
   );
 }
