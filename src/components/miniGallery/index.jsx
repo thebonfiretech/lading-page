@@ -8,18 +8,14 @@ const MiniGallery = ({ id }) => {
     <Container id={id}>
       <GalleryContainer>
       <GalleryPhotos reverse={false}>
-        <Gallery width="336px" height="228px" />
-        <Gallery width="158px" height="228px" />
-        <Gallery width="158px" height="228px" />
-        <Gallery width="158px" height="228px" />
-        <Gallery width="260px" height="228px" />
+        <Gallery image="/images/photoGallery2.png" width="336px" height="228px" />
+        <Gallery  image="/images/photoGallery1.jpeg"  width="158px" height="228px" />
+        <Gallery image="/images/photoGallery5.jpeg" width="260px" height="228px" />
       </GalleryPhotos>
       <GalleryPhotos reverse={true}>
-        <Gallery width="336px" height="228px" />
-        <Gallery width="158px" height="228px" />
-        <Gallery width="158px" height="228px" />
-        <Gallery width="158px" height="228px" />
-        <Gallery width="260px" height="228px" />
+        <Gallery image="/images/photoGallery6.jpeg" width="336px" height="228px" />
+  <Gallery image="/images/photoGallery3.jpg" width="158px" height="228px" />
+        <Gallery image="/images/photoGallery4.jpg"width="260px" height="228px" />
       </GalleryPhotos>
       <GalleryMobile/>
       </GalleryContainer>
